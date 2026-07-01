@@ -1,0 +1,348 @@
+diffview.gadget.debug   01-Jul-26 16:12:45  Hunk Section                Page 1-1
+
+ num hunk         size filename         punit    type         base  alv     size
+   0 TEXT         76e0 classinit.o      classini code            0    0       b8
+                       classbase.o      classbas code           b8    0      378
+                       endcode.o        endcode. code          430    0        0
+                       debug.o          debug.c  code          430    0      2e0
+                       DiffViewGClass.o DiffView code          710    0     18c4
+                       LineCmpGClass.o  LineCmpG code         1fd4    0      86c
+                       diffobject.o     diffobje code         2840    0      c8c
+                       diffengine.o     diffengi code         34cc    0      e38
+                       difffile.o       difffile code         4304    0      308
+                       diffline.o       diffline code         460c    0      33c
+                       diffrender.o     diffrend code         4948    0      e6c
+                       diffpens.o       diffpens code         57b4    0      7ec
+                       diffselect.o     diffsele code         5fa0    0      488
+                       diffclip.o       diffclip code         6428    0      368
+                       diffunified.o    diffunif code         6790    0      ce4
+                       sc:lib/sc.lib    _cxamemc code         7474    0       94
+                       sc:lib/sc.lib    classfac code         7508    0       e4
+                       sc:lib/sc.lib    _CXD33.o code         75ec    0       c4
+                       sc:lib/sc.lib    _CXM22.o code         76b0    0       30
+   1 __MERGED      108 diffobject.o     diffobje data            0    0        4
+                       sc:lib/sc.lib    ctype.c  data            4    0      104
+diffview.gadget.debug  01-Jul-26 16:12:45  Symbol Section               Page 2-1
+
+symbol             offset:hunk symbol             offset:hunk
+@CoerceMethodA       7558:0    @DoMethodA           7582:0   
+@DoSuperMethodA      759c:0    @_CXBRK               1ce:0   
+@__chkabort           1cc:0    ENDCODE               430:0   
+_CoerceMethod        7536:0    _CoerceMethodA       754c:0   
+_CreateDiffObjec     2cde:0    _CreateDiffObjec     3448:0   
+_DiffClip_CopySe     64c8:0    _DiffColors_Defa     57b4:0   
+_DiffEngine_Comp     41c2:0    _DiffEngine_Free     4154:0   
+_DiffEngine_Init     411c:0    _DiffFile_AddEmp     4484:0   
+_DiffFile_AddLin     4402:0    _DiffFile_Collec     454c:0   
+_DiffFile_Free       4394:0    _DiffFile_Init       437e:0   
+_DiffFile_Line       44c2:0    _DiffFile_MaxRen     45be:0   
+_DiffFile_NumDig     44f0:0    _DiffFile_NumLin     44e2:0   
+_DiffLine_Docume     47ec:0    _DiffLine_Free       46d0:0   
+_DiffLine_GetTex     4874:0    _DiffLine_Init       460c:0   
+_DiffLine_InitLi     468e:0    _DiffLine_LineNu     4766:0   
+_DiffLine_Render     479a:0    _DiffLine_SetLin     477c:0   
+_DiffLine_SetSta     4756:0    _DiffLine_State      4748:0   
+_DiffLine_Text       4722:0    _DiffLine_TextLe     473a:0   
+_DiffLine_Token      478c:0    _DiffObject_Left     3460:0   
+_DiffObject_MaxL     34bc:0    _DiffObject_NewN     34a0:0   
+_DiffObject_OldN     3484:0    _DiffObject_Righ     3470:0   
+_DiffPens_FillPa     5f0c:0    _DiffPens_FillRe     5e9a:0   
+_DiffPens_Free       5e32:0    _DiffPens_Init       5de0:0   
+_DiffPens_InitLi     5af6:0    _DiffPens_LineSt     5864:0   
+_DiffPens_SetJam     581a:0    _DiffPens_SetWri     5e72:0   
+_DiffPens_Shutdo     5b0e:0    _DiffRender_Comp     4ba6:0   
+_DiffRender_Coun     53d2:0    _DiffRender_Draw     5242:0   
+_DiffRender_Draw     4fcc:0    _DiffRender_Draw     4dbe:0   
+_DiffRender_Draw     4cd6:0    _DiffRender_Draw     5478:0   
+_DiffRender_Over     5752:0    _DiffRender_Pane     55dc:0   
+_DiffRender_Pane     564c:0    _DiffSelect_Clea     5fe2:0   
+_DiffSelect_GetN     62ac:0    _DiffSelect_GetN     61ce:0   
+_DiffSelect_GetN     6334:0    _DiffSelect_GetT     63ae:0   
+_DiffSelect_Init     5fc4:0    _DiffSelect_IsSe     6128:0   
+_DiffSelect_Star     5ff2:0    _DiffSelect_Upda     604a:0   
+_DiffUnified_Bui     738a:0    _DiffViewCreateC     1f5e:0   
+_DiffViewDeleteC     1fa4:0    _DIFFVIEW_GetCla      3ce:0   
+_DoMethod            7508:0    _DoMethodA           757a:0   
+_DoSuperMethod       751c:0    _DoSuperMethodA      7590:0   
+_do_LibBase             0:1    _dv_TraceHex          56e:0   
+_dv_TraceMsg          53c:0    _dv_TraceULong        646:0   
+_FreeDiffObject      3326:0    _GetDiffObjectAt     33d2:0   
+_GetEngine            3c8:0    _LibClose             2f4:0   
+_LibExpunge           30c:0    _LibInit              1d0:0   
+_LibOpen              2e2:0    _LineCmpCreateCl     27ca:0   
+_LineCmpDeleteCl     280e:0    _LINECMP_GetClas      3d4:0   
+_LinkerDB              (0:*)   _L_CreateDiffObj      3da:0   
+_L_FreeDiffObjec      410:0    _L_GetDiffObject      41c:0   
+_SetSuperAttrs       75b2:0    __BSSBAS               (0:*)  
+__BSSLEN               (0:*)   __CoverLength          (0:*)  
+__CoverStart           (0:*)   __CXAMEMCPY          7474:0   
+__CXD22              761e:0    __CXD33              75ec:0   
+__CXM22              76b0:0    __LibRevision          (0:*)  
+diffview.gadget.debug  01-Jul-26 16:12:45  Symbol Section               Page 2-2
+
+symbol             offset:hunk symbol             offset:hunk
+__LibVersion           (0:*)   __XCEXIT              1c8:0   
+___ctype                4:1   
+diffview.gadget.debug   01-Jul-26 16:12:45  Xref Section                Page 3-1
+
+symbol           (Def) Module  Off (Ref) Module  Off (Ref) Module  Off
+ENDCODE          endcode.        0 classini        a
+_CoerceMethodA   classfac       44 LineCmpG      33a DiffView      f42
+_CreateDiffObjec diffobje      49e classbas      34e
+_DiffClip_CopySe diffclip       a0 DiffView     173e
+_DiffColors_Defa diffpens        0 LineCmpG      212 LineCmpG      354
+                                   DiffView      f78
+_DiffEngine_Comp diffengi      cf6 diffobje      994
+_DiffEngine_Free diffengi      c88 diffobje      9d4 diffobje      a26
+_DiffEngine_Init diffengi      c50 diffobje      96a
+_DiffFile_AddEmp difffile      180 diffunif      1d6 diffengi      b38
+                                   diffengi      baa diffobje      264
+_DiffFile_AddLin difffile       fe diffunif      254 diffengi      99e
+                                   diffengi      9b0 diffengi      a9a
+                                   diffengi      aaa diffengi      b2e
+                                   diffengi      bd8 diffobje      2ce
+_DiffFile_Collec difffile      248 diffobje      90e diffobje      922
+                                   diffobje      a4e diffobje      a6a
+_DiffFile_Free   difffile       90 diffobje      89a diffobje      8a4
+                                   diffobje      946 diffobje      950
+                                   diffobje      9de diffobje      9e8
+                                   diffobje      a30 diffobje      a3a
+                                   diffobje      b04 diffobje      b10
+_DiffFile_Init   difffile       7a diffobje      74a diffobje      758
+                                   diffobje      7bc diffobje      7c4
+_DiffFile_Line   difffile      1be diffunif      646 diffunif      652
+                                   diffclip      1de diffsele       10
+                                   diffrend      50c diffrend      766
+                                   diffrend      77a diffrend      abc
+                                   diffrend      b0c diffrend      ddc
+                                   diffengi      102 diffengi      126
+                                   diffengi      14a diffengi      154
+                                   diffengi      298 diffengi      2a4
+                                   diffengi      386 diffengi      392
+                                   diffengi      58c diffengi      598
+                                   diffengi      5ea diffengi      5fc
+                                   diffengi      656 diffengi      684
+                                   diffengi      8f0 diffengi      8fc
+                                   diffengi      9de diffengi      9ea
+                                   diffengi      af6 diffengi      b7a
+                                   diffengi      b96 diffengi      c1c
+                                   diffobje      42a diffobje      436
+                                   DiffView      3be DiffView      3c8
+                                   DiffView      846
+_DiffFile_MaxRen difffile      2ba diffobje      a9e diffobje      aae
+_DiffFile_NumLin difffile      1de diffunif      364 diffunif      61c
+                                   diffunif      628 diffunif      634
+                                   diffsele       72 diffsele       d4
+                                   diffsele      3b8 diffrend      6b6
+                                   diffrend      6c8 diffrend      6d4
+                                   diffrend      aac diffrend      afc
+                                   diffrend      d96 diffrend      da4
+                                   diffrend      db0 diffengi       f0
+                                   diffengi      4e8 diffengi      4fa
+diffview.gadget.debug   01-Jul-26 16:12:45  Xref Section                Page 3-2
+
+symbol           (Def) Module  Off (Ref) Module  Off (Ref) Module  Off
+                                   diffengi      9ba diffengi      9c8
+                                   diffengi      a8a diffengi      ad0
+                                   diffengi      ade diffengi      b20
+                                   diffengi      b5c diffengi      b6a
+                                   diffengi      bca diffengi      bfe
+                                   diffengi      c0a diffengi      c30
+                                   diffengi      c40 diffengi      d46
+                                   diffengi      d50 diffengi      d96
+                                   diffobje      400 diffobje      40c
+                                   diffobje      418 diffobje      8be
+                                   diffobje      8c8 diffobje      8d6
+                                   diffobje      8e2 diffobje      8f6
+                                   diffobje      a44 diffobje      a5e
+                                   DiffView      52c DiffView      5ea
+                                   DiffView      6f8 DiffView      de6
+                                   DiffView     17ca
+_DiffLine_Docume diffline      1e0 diffrend      df8
+_DiffLine_Free   diffline       c4 diffunif      264 difffile       b4
+                                   diffengi      962 diffengi      97e
+                                   diffengi      a54 diffengi      a70
+                                   diffobje      2de
+_DiffLine_GetTex diffline      268 diffrend      1f6
+_DiffLine_Init   diffline        0 diffunif      236 diffengi      8a6
+                                   diffobje      2c0
+_DiffLine_InitLi diffline       82 difffile      1a4
+_DiffLine_LineNu diffline      15a diffrend      552
+_DiffLine_Render diffline      18e difffile      2ea DiffView      85a
+_DiffLine_SetLin diffline      170 difffile      2a2 diffengi      8c4
+_DiffLine_SetSta diffline      14a diffunif      244 diffunif      69e
+                                   diffunif      6a8 diffengi      188
+                                   diffengi      190 diffengi      666
+                                   diffengi      694 diffengi      8b4
+                                   diffobje      482 diffobje      48c
+_DiffLine_State  diffline      13c diffunif      666 diffunif      672
+                                   diffrend       36 diffrend      798
+                                   diffrend      aca diffrend      b1a
+                                   diffengi      10e diffengi      132
+                                   diffengi      17c diffengi      914
+                                   diffengi      922 diffengi      a02
+                                   diffengi      a10 diffengi      b80
+                                   diffengi      c22 diffobje      44a
+                                   diffobje      456
+_DiffLine_Text   diffline      116 diffunif      67e diffunif      686
+                                   diffclip      1ec diffrend       52
+                                   diffengi      812 diffobje      462
+                                   diffobje      46a DiffView      3d8
+                                   DiffView      3ee
+_DiffLine_TextLe diffline      12e diffclip      202 diffsele       20
+                                   diffrend      1d8 difffile      2e0
+                                   diffengi      7e4
+_DiffLine_Token  diffline      180 diffengi      168 diffengi      170
+                                   diffengi      2b8 diffengi      2c0
+                                   diffengi      3a6 diffengi      3ae
+diffview.gadget.debug   01-Jul-26 16:12:45  Xref Section                Page 3-3
+
+symbol           (Def) Module  Off (Ref) Module  Off (Ref) Module  Off
+                                   diffengi      5ac diffengi      5b4
+                                   diffengi      610 diffengi      618
+_DiffObject_Left diffobje      c20 DiffView      3aa DiffView      526
+                                   DiffView      5e4 DiffView      6f2
+                                   DiffView      76c DiffView      7da
+                                   DiffView      9aa DiffView      de0
+                                   DiffView     13c2 DiffView     16d8
+                                   DiffView     1712 DiffView     17c4
+_DiffObject_MaxL diffobje      c7c DiffView      580 DiffView      5f2
+_DiffObject_NewN diffobje      c60 DiffView     13e8
+_DiffObject_OldN diffobje      c44 DiffView     13e0
+_DiffObject_Righ diffobje      c30 DiffView      3b4 DiffView      764
+                                   DiffView      7d2 DiffView      aa0
+                                   DiffView     13cc DiffView     16ea
+                                   DiffView     1722
+_DiffPens_FillPa diffpens      758 diffrend       9e
+_DiffPens_FillRe diffpens      6e6 diffrend      4f4 diffrend      714
+                                   diffrend      818 diffrend      84e
+                                   diffrend      950 diffrend      b92
+                                   LineCmpG      680 DiffView     139c
+_DiffPens_Free   diffpens      67e LineCmpG      1b8 LineCmpG      3da
+                                   DiffView      13a DiffView      468
+                                   DiffView     103a
+_DiffPens_Init   diffpens      62c LineCmpG      224 DiffView      294
+_DiffPens_InitLi diffpens      342 classbas      130
+_DiffPens_LineSt diffpens       b0 diffrend       46
+_DiffPens_SetJam diffpens       66 diffrend      174 diffrend      54c
+                                   diffrend      960 LineCmpG      6c8
+                                   LineCmpG      73e
+_DiffPens_Shutdo diffpens      35a classbas      100 classbas      2d4
+_DiffRender_Comp diffrend      25e DiffView      338 DiffView      36e
+_DiffRender_Coun diffrend      a8a DiffView     14d6
+_DiffRender_Draw diffrend      8fa DiffView     1422
+_DiffRender_Draw diffrend      684 DiffView     1470
+_DiffRender_Draw diffrend      476 DiffView     149a DiffView     14b6
+_DiffRender_Draw diffrend      b30 DiffView     150c
+_DiffRender_Over diffrend      e0a DiffView     17ee
+_DiffRender_Pane diffrend      c94 DiffView      996 DiffView      a8c
+_DiffRender_Pane diffrend      d04 DiffView      81c DiffView      9d6
+                                   DiffView      acc
+_DiffSelect_Clea diffsele       42 DiffView      742 DiffView      a06
+                                   DiffView      afc DiffView     101a
+                                   DiffView     1024
+_DiffSelect_GetN diffsele      30c diffclip      22a
+_DiffSelect_GetN diffsele      22e diffclip      258 diffrend      10a
+_DiffSelect_GetN diffsele      394 diffrend       ee
+_DiffSelect_GetT diffsele      40e diffclip       ca DiffView     16e2
+                                   DiffView     16f4
+_DiffSelect_Init diffsele       24 DiffView      f64 DiffView      f6e
+_DiffSelect_IsSe diffsele      188 DiffView      9f8 DiffView      aee
+_DiffSelect_Star diffsele       52 DiffView      78e
+_DiffSelect_Upda diffsele       aa DiffView      8a2 DiffView      a2c
+                                   DiffView      b22
+diffview.gadget.debug   01-Jul-26 16:12:45  Xref Section                Page 3-4
+
+symbol           (Def) Module  Off (Ref) Module  Off (Ref) Module  Off
+_DiffUnified_Bui diffunif      bfa diffobje      80e
+_DiffViewCreateC DiffView     184e classbas      1b2
+_DIFFVIEW_GetCla classbas      316 classini       88
+_DoSuperMethodA  classfac       88 LineCmpG      2da LineCmpG      306
+                                   LineCmpG      3ec LineCmpG      420
+                                   LineCmpG      48c LineCmpG      556
+                                   LineCmpG      560 LineCmpG      594
+                                   LineCmpG      5c2 LineCmpG      612
+                                   LineCmpG      79a LineCmpG      7b4
+                                   DiffView      ee0 DiffView      f0c
+                                   DiffView     104c DiffView     1080
+                                   DiffView     10ec DiffView     1210
+                                   DiffView     122e DiffView     127a
+                                   DiffView     12a8 DiffView     1316
+                                   DiffView     13b4 DiffView     1524
+                                   DiffView     1542 DiffView     1696
+_do_LibBase      diffobje        0 classbas      12a classbas      22c
+_dv_TraceHex     debug.c       13e diffobje      4c2 diffobje      4d8
+                                   diffobje      4e6 diffobje      66c
+                                   diffobje      67a classbas      33a
+                                   classbas      346
+_dv_TraceMsg     debug.c       10c diffengi      dcc diffengi      dde
+                                   diffobje      4b6 diffobje      7e0
+                                   diffobje      846 diffobje      974
+                                   diffobje      ad4 DiffView     12ba
+                                   DiffView     1308 DiffView     13da
+                                   DiffView     142c DiffView     147e
+                                   DiffView     1516 classbas      32e
+_dv_TraceULong   debug.c       216 diffobje      63e diffobje      64c
+                                   diffobje      65e diffobje      8ee
+                                   diffobje      902
+_FreeDiffObject  diffobje      ae6 classbas      35e
+_GetDiffObjectAt diffobje      b92 classbas      36e
+_GetEngine       classbas      310 classini       86
+_LibClose        classbas      23c classini       80
+_LibExpunge      classbas      254 classini       82
+_LibInit         classbas      118 classini       78
+_LibOpen         classbas      22a classini       7e
+_LineCmpCreateCl LineCmpG      7f6 classbas      1ec
+_LINECMP_GetClas classbas      31c classini       8a
+_L_CreateDiffObj classbas      322 classini       8c
+_L_FreeDiffObjec classbas      358 classini       8e
+_L_GetDiffObject classbas      364 classini       90
+__CXAMEMCPY      _cxamemc        0 diffpens      438
+__CXD22          _CXD33.o       32 diffunif      8cc diffunif      b6c
+                                   diffrend      2f2 diffrend      7dc
+                                   diffrend      880 diffrend      8bc
+                                   diffrend      a1a diffrend      a2a
+                                   diffrend      e56 diffline      1c2
+                                   diffline      216 diffline      2b6
+                                   diffline      2d4 diffline      2f0
+                                   difffile       46 difffile       5a
+                                   difffile      208 difffile      222
+diffview.gadget.debug   01-Jul-26 16:12:45  Xref Section                Page 3-5
+
+symbol           (Def) Module  Off (Ref) Module  Off (Ref) Module  Off
+                                   difffile      234 diffengi      d9e
+                                   debug.c        c6 debug.c        d6
+__CXD33          _CXD33.o        0 diffrend      376 diffrend      d88
+                                   diffrend      dce
+__CXM22          _CXM22.o        0 diffrend      188 diffrend      358
+                                   diffrend      524 diffrend      87a
+                                   diffrend      8b6 diffrend      e4e
+___ctype         ctype.c         0 diffunif      3f6 diffunif      434
+diffview.gadget.debug   01-Jul-26 16:12:45  File Section                Page 4-1
+
+filename         punit    hunk     type       offset:hunk     size
+classinit.o      classini TEXT     code            0:0          b8
+classbase.o      classbas text     code           b8:0         378
+endcode.o        endcode. TEXT     code          430:0           0
+debug.o          debug.c  text     code          430:0         2e0
+DiffViewGClass.o DiffView text     code          710:0        18c4
+LineCmpGClass.o  LineCmpG text     code         1fd4:0         86c
+diffobject.o     diffobje text     code         2840:0         c8c
+                          __MERGED data            0:1           4
+diffengine.o     diffengi text     code         34cc:0         e38
+difffile.o       difffile text     code         4304:0         308
+diffline.o       diffline text     code         460c:0         33c
+diffrender.o     diffrend text     code         4948:0         e6c
+diffpens.o       diffpens text     code         57b4:0         7ec
+diffselect.o     diffsele text     code         5fa0:0         488
+diffclip.o       diffclip text     code         6428:0         368
+diffunified.o    diffunif text     code         6790:0         ce4
+diffview.gadget.debug 01-Jul-26 16:12:45  Library Section               Page 5-1
+
+filename         punit    hunk     type       offset:hunk     size
+sc:lib/sc.lib    _cxamemc text     code         7474:0          94
+                 classfac text     code         7508:0          e4
+                 ctype.c  text     code            -:-           0
+                          __MERGED data            4:1         104
+                 _CXD33.o text     code         75ec:0          c4
+                 _CXM22.o text     code         76b0:0          30

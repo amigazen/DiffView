@@ -1,0 +1,84 @@
+## SPDX-License-Identifier: Apache-2.0
+## SPDX-FileCopyrightText: 2026 amigazen project
+
+##
+## smakefile - diffview.gadget BOOPSI class library (vector.image layout)
+##
+
+PROJ = DiffViewTest
+CLASS = diffview.gadget
+CLASS_DEBUG = diffview.gadget.debug
+
+OSVER = OS30_ONLY
+
+CLASSLIBVERSION  = 1
+CLASSLIBREVISION = 0
+
+PROJOBJS = /test/DiffViewTest.o /test/diffview_stubs.o /test/scroller_stubs.o
+CLASSOBJS = classinit.o classbase.o endcode.o debug.o DiffViewGClass.o \
+            LineCmpGClass.o diffobject.o diffengine.o difffile.o diffline.o \
+            diffrender.o diffpens.o diffselect.o diffclip.o diffunified.o
+
+SDKHDR = //SDK/Include_h/gadgets/diffview.h
+TAGSHDR = //SDK/Include_h/gadgets/diffview_tags.h
+
+CC = sc
+ASM = asm
+LD = slink
+RM = delete force quiet
+
+LDFLAGS = ADDSYM SC SD MAP diffview.map HLSXF PLAIN SWIDTH 16
+LDFLAGS_STRIP = ND
+
+all: $(PROJ) $(CLASS) left.txt right.txt
+
+clean:
+	-$(RM) $(PROJ) $(CLASS) $(CLASS_DEBUG) diffview.map left.txt right.txt $(CLASSOBJS) $(PROJOBJS)
+
+left.txt: /test/left.txt
+	Copy /test/left.txt TO left.txt
+
+right.txt: /test/right.txt
+	Copy /test/right.txt TO right.txt
+
+# Test harness (hosted program with c.o).
+$(PROJ): $(PROJOBJS)
+	$(LD) LIB:c.o $(PROJOBJS) TO $@ \
+		LIB sc:lib/sc.lib LIB:amiga.lib NODEBUG NOICONS
+
+.c.o:
+	$(CC) $*.c
+
+.asm.o:
+	$(ASM) $*.asm
+
+$(CLASS): $(CLASS_DEBUG)
+	$(LD) FROM $(CLASS_DEBUG) TO $(CLASS) $(LDFLAGS_STRIP)
+
+$(CLASS_DEBUG): $(CLASSOBJS)
+	$(LD) FROM $(CLASSOBJS) TO $(CLASS_DEBUG) \
+		LIB sc:lib/sc.lib LIB:amiga.lib $(LDFLAGS)
+	@Avail Flush >NIL:
+
+classinit.o: classinit.asm diffview_rev.i classbase.i
+endcode.o:   endcode.asm
+
+classbase.o:      classbase.c      classbase.h class_iprotos.h diffviewclass.h Debug.h
+debug.o:          debug.c          classbase.h Debug.h
+DiffViewGClass.o: DiffViewGClass.c classbase.h class_iprotos.h diffviewclass.h
+LineCmpGClass.o:  LineCmpGClass.c  classbase.h class_iprotos.h diffviewclass.h
+diffobject.o:     diffobject.c     classbase.h diffobject.h diffengine.h diffviewclass.h
+diffengine.o:     diffengine.c     classbase.h diffengine.h diffviewclass.h
+difffile.o:       difffile.c       classbase.h difffile.h diffline.h
+diffline.o:       diffline.c       classbase.h diffline.h
+diffrender.o:     diffrender.c     classbase.h diffrender.h diffline.h diffviewclass.h
+diffpens.o:       diffpens.c       classbase.h diffpens.h diffviewclass.h
+diffselect.o:     diffselect.c     diffselect.h difffile.h diffline.h classbase.h
+diffclip.o:       diffclip.c       diffclip.h diffselect.h difffile.h diffline.h classbase.h
+diffunified.o:    diffunified.c    diffunified.h diffobject.h difffile.h diffline.h classbase.h
+DiffViewTest.o:   /test/DiffViewTest.c /test/diffview_pragmas.h $(SDKHDR) $(TAGSHDR)
+diffview_stubs.o: /test/diffview_stubs.c /test/diffview_pragmas.h $(SDKHDR) $(TAGSHDR)
+scroller_stubs.o: /test/scroller_stubs.c
+
+install: $(CLASS)
+	-Copy $(CLASS) SYS:Classes/Gadgets/$(CLASS)
